@@ -36,3 +36,5 @@ jobs:
         with:
           name: public
           path: ./dist
+      - name: Run tests
+        run: npm run test

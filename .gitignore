@@ -42,4 +42,5 @@ testem.log
 Thumbs.db
 
 # Builds folder
-/public
+/dist
+/documentation

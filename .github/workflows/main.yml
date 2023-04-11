@@ -38,3 +38,14 @@ jobs:
           path: ./dist
       - name: Run tests
         run: npm test -- --watch=false --browsers=ChromeHeadless
+      
+      # Deploy documentation
+      - name: Build docs
+        run: npm run docs
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages
+          folder: documentation
+

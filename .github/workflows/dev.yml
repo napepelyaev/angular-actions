@@ -37,4 +37,4 @@ jobs:
           name: dev_artifact
           path: ./dist
       - name: Run tests
-        run: npm run test
+        run: ng test

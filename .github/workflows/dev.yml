@@ -28,7 +28,7 @@ jobs:
         run: npm install  --legacy-peer-deps
       # Runs a set of commands to build
       - name: Build
-        run: npm run build
+        run: tree && npm run build
         
       # Store the artifact
       - name: Archive Production Artifact

@@ -25,7 +25,7 @@ jobs:
           node-version: '18.x'
       # Install the dependencies need to build the app
       - name: Install Dependencies
-        run: npm install
+        run: npm install  --legacy-peer-deps
       # Runs a set of commands to build
       - name: Build
         run: npm run build --prod

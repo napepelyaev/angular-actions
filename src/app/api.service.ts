@@ -1,0 +1,19 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import config from '../../auth_config.json';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class ApiService {
+  constructor(private http: HttpClient) {}
+/**
+ * Функция выполняющая ping-запрос
+ * @returns Результат пинг
+ */
+  ping$(): Observable<any> {
+    console.log(config.apiUri);
+    return this.http.get(`${config.apiUri}/api/external`);
+  }
+}

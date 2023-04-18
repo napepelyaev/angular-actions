@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   /**
-   * Заголовок стандартного компонента
+   * олпкржлваоыдл
    */
   title = 'angular-actions';
 }
